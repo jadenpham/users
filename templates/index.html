@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Users</title>
+</head>
+<style>
+    .container{
+        text-align: center;
+    }
+</style>
+<body>
+    <div class="container">
+        <h1>Add a New User</h1>
+        <form action="/user/new" method="POST">
+            <p>First Name:</p>
+            <input type="text" name="fname">
+            <p>Last Name:</p>
+            <input type="text" name="lname">
+            <p>Email:</p>
+            <input type="text" name="email">
+            <p><input type="submit" value="Create"></p>
+            
+        </form>
+    </div>
+</body>
+</html>
+
+
+  <!-- {% for friend in friends %}
+            <h1>User_ID: {{friend['id']}}</h1>
+            <p>Full Name: {{friend['first_name']}} {{friend['last_name']}}</p>
+            <p>Email: {{friend['email']}}</p>
+            <p>Created On: {{friend['created_at']}}</p>
+            <p>Updated On: {{friend['updated_at']}}</p>
+        {% endfor %} -->
+        <!-- <h1>User_id: {{ friends[userid]["id"] }}</h1>
+        <p>Full Name: {{ friends[userid]["first_name"] }} {{ friends[userid]["last_name"] }}</p>
+        <p>Email: {{friends[userid]['email']}}</p>
+        <p>Created On: {{friends[userid]['created_at']}}</p>
+        <p>Updated On: {{friends[userid]['updated_at']}}</p>
+        <a href="/update">Edit</a>
+        <a href="/delete">Delete</a> -->
